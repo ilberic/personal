@@ -1,0 +1,115 @@
+*
+    font-family: 'Montserrat', sans-serif
+
+.header
+    padding: 100px 0
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position: relative
+        &-logo
+            display: flex
+            flex-direction: column
+            left: -40%
+            align-items: flex-end
+            color: #000000
+            font-size: 40px
+            font-weight: 800
+            width: 80%
+            transition: 1s all
+            position: absolute
+            top: 40%
+            img
+                margin-top: 10px
+                width: 50%
+                margin-left: 20px
+            &_descr
+                position: absolute
+                right: 0
+                top: -100%
+                transition: 0.5s all
+        &-image
+            width: 500px
+            height: 500px
+            background: linear-gradient(123.16deg, #ECECEC 13.37%, rgba(255, 255, 255, 0) 82.71%), #FFFFFF
+            border-radius: 100%
+            position: absolute
+            right: 0
+            top: 50vh
+            transform: translateY(-70%)
+            z-index: -2
+            overflow: hidden
+            &_fill
+                position: absolute
+                width: 80%
+                height: 80%
+                background: linear-gradient(154.27deg, rgba(255, 255, 255, 0) -11.34%, #009688 83.74%), linear-gradient(303.94deg, rgba(255, 255, 255, 0) 27.35%, #1074A2 91.25%), #FFFFFF;
+                border-radius: 100%
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                z-index: -1
+            img
+                height: 90%
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%)
+                position: absolute
+                z-index: 10
+                opacity: 0
+                transition: 1s all
+
+        &-main
+            color: #000000
+            font-size: 25px
+            font-weight: 800
+            width: 50%
+            opacity: 0
+            transition: 1s all
+            margin-top: 30px
+            display: block
+            span
+                color: #009688
+            &_descr
+                margin-bottom: 30px
+            &_wrapper
+                &-item
+                    margin-bottom: 15px
+                    cursor: pointer
+        &-about
+            font-size: 13px
+            line-height: 15px
+            width: 50%
+            display: none
+            opacity: 0
+            span
+                font-weight: 800
+            &_title
+                span
+                    font-size: 26px
+            .btn
+                font-size: 20px
+                font-weight: 800
+                line-height: 50px
+                text-transform: uppercase
+                text-decoration: underline
+                cursor: pointer
+                text-align: center
+                margin-top: 20px
+            &_respons
+                display: none
+                opacity: 0
+                transition: 0.5s all
+                height: 70vh
+                overflow: scroll
+                padding: 20px 20px
+                border: 1px solid #1A75A0
+                margin-top: 10px
+                
+
+
+        
+                
+            
+                
