@@ -68,7 +68,6 @@
             opacity: 0
             transition: 1s all
             margin-top: 30px
-            display: block
             span
                 color: #009688
             &_descr
@@ -83,6 +82,7 @@
             width: 50%
             display: none
             opacity: 0
+            transition: 1s all
             span
                 font-weight: 800
             &_title
@@ -106,10 +106,125 @@
                 padding: 20px 20px
                 border: 1px solid #1A75A0
                 margin-top: 10px
-                
+        &-more
+            padding: 30px 0
+            font-size: 20px
+            font-weight: 500
+            width: 50%
+            display: none
+            opacity: 0
+            transition: 1s all
+            &_title
+                font-weight: 800
+                margin: 20px 0
+            &_tel
+                font-weight: 800
+                margin: 20px 0
+                display: block
+                color: #000 !important
+            form
+                display: flex
+                flex-direction: column
+                input
+                    margin: 20px 0
+                    border: none
+                    border-bottom: 3px solid #000
+                    padding: 10px
+                button
+                    margin-top: 20px
+                    border: none     
+                    border-bottom: 3px solid #000
+                    background: none
+                    padding: 10px
+                    transition: 0.5s all
+                    &:hover
+                        transform: scale(1.1)
+                #send-message
+                    font-size: 15px
+                    color: #159588
+                    opacity: 0
+@media (max-width: 1200px)
+    .header
+        padding-bottom: 0
+        &__wrapper
+            &-main
+                &_wrapper
+                    &-item
+                        font-size: 22px
+            &-about
+                &_respons
+                    height: 63vh
+            &-image
+                width: 400px
+                height: 400px
+            &-more
+                padding: 0
+                &_title
+                    margin: 5px 0
+                &_tel
+                    margin: 5px 0
+@media (max-width: 992px)
+    .header
+        &__wrapper
+            &-main
+                &_descr
+                    margin-bottom: 15px
+                    font-size: 20px
+                    line-height: 20px
+                &_wrapper
+                    &-item
+                        font-size: 18px
+            &-about
+                &_respons
+                &_title
+                    span
+                        font-size: 20px
+                .btn
+                    font-size: 15px
+            &-image
+                width: 340px
+                height: 340px
+            &-more
+                &_title
+                &_tel
+                   margin: 5px 0
+@media (max-width: 767px)
+    .header
+        &__wrapper
+            flex-direction: column
+            width: 100%
+            &-logo
+                left: -100px
+                transform: none
+                &_descr
+                    top: -120%
+                    font-size: 30px
+            &-main
+                width: 100%
+                text-align: center
+                &_descr
+                    font-size: 15px
+                    line-height: 15px
+                &_wrapper
+                    &-item
+                        font-size: 15px
+            &-about
+                width: 100%
+                &_respons
+                &_title
+                    span
+                .btn
+                    line-height: 30px
+            &-image
+                width: 100px
+                height: 100px
+                top: 0
+                transform: translateY(-100%)
 
-
-        
-                
-            
-                
+            &-more
+                text-align: center
+                width: 100%
+                &_title
+                    font-size: 18px
+                &_tel
+                    font-size: 18px
